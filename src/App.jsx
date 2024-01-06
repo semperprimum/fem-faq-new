@@ -1,5 +1,5 @@
 import "./App.scss";
-import { Container, Heading, QuestionList } from "./components";
+import { Attribution, Container, Heading, QuestionList } from "./components";
 
 export default function App() {
   return (
@@ -8,6 +8,7 @@ export default function App() {
         <Heading>FAQs</Heading>
         <QuestionList />
       </Container>
+      <Attribution />
     </>
   );
 }
