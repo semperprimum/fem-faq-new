@@ -9,10 +9,8 @@ export function QuestionItem({ item, toggleOpen }) {
         onClick={() => toggleOpen(item.id)}
         className={styles.questionGroup}
       >
-        <h2 className={styles.question}>{item.question}</h2>
-        <div className={styles.toggle}>
-          {item.isOpen ? <MinusIcon /> : <PlusIcon />}
-        </div>
+        {item.question}
+        {item.isOpen ? <MinusIcon /> : <PlusIcon />}
       </button>
       <p className={styles.answer}>{item.answer}</p>
     </li>

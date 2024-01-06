@@ -43,17 +43,19 @@
     background     : none;
     border         : none;
     text-align     : start;
+    font-size      : var(--fs-200);
+    line-height    : normal;
+    font-weight    : var(--fw-semibold);
 
     @media only screen and (min-width: 37.5em) {
-        gap: .5rem
+        gap       : .5rem;
+        cursor    : pointer;
+        transition: color 150ms ease;
+
+        &:hover {
+            color: var(--clr-primary-300);
+        }
     }
-}
-
-.question {
-    font-size  : var(--fs-200);
-    line-height: normal;
-    font-weight: var(--fw-semibold);
-
 }
 
 .answer {
