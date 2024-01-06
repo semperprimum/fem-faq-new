@@ -19,3 +19,19 @@
         --fs-300: 3.5rem;
     }
 }
+
+body {
+    font-family      : "Work Sans Variable", sans-serif;
+    color            : var(--clr-primary-400);
+    background-color : var(--clr-primary-100);
+    background-image : url("./assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size  : contain;
+
+    display    : grid;
+    align-items: center;
+
+    @media only screen and (min-width: 45em) {
+        background-image: url("./assets/images/background-pattern-desktop.svg");
+    }
+}
