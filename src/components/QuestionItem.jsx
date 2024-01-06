@@ -8,11 +8,14 @@ export function QuestionItem({ item, toggleOpen }) {
       <button
         onClick={() => toggleOpen(item.id)}
         className={styles.questionGroup}
+        aria-controls={`Question ${item.id}`}
       >
         {item.question}
         {item.isOpen ? <MinusIcon /> : <PlusIcon />}
       </button>
-      <p className={styles.answer}>{item.answer}</p>
+      <p id={`Question ${item.id}`} className={styles.answer}>
+        {item.answer}
+      </p>
     </li>
   );
 }
